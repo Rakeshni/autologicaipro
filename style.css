@@ -1,0 +1,418 @@
+@tailwind base;
+@tailwind components;
+
+*{
+   @apply m-0 p-0 box-border font-sans;
+
+}
+/* header section */
+
+
+.logo_cont{
+    @apply px-9 py-0;
+}
+.logo_hamb{
+    @apply  flex justify-between my-8 items-center md:my-12;
+}
+.logo_hamb img{
+    @apply w-[70%] md:w-[40%] xl:w-[30%] 2xl:w-[18%];
+}
+
+.hamber{
+    @apply flex items-center md:hidden;
+}
+.hamber .mid-line{
+    @apply text-2xl; 
+}
+
+.ul_li{
+    @apply hidden md:block;
+}
+.flex_item{
+    @apply flex;
+}
+.flex_cent{
+    @apply px-3 py-0;
+}
+.ul_li  .flex_item a {
+    @apply text-sm font-semibold;
+}
+.ul_li  .flex_item a:hover {
+    @apply  text-green-600;
+}
+
+
+/* .bgrd_img{
+    @apply h-[80vh]  w-full  p-2.5 flex flex-col justify-center items-center;
+    background-image: url('/images/@UnSi3fPXt37X6UQ.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+} */
+
+/* .sustain{
+    @apply text-5xl text-white text-center  md:w-[70vw] lg:w-[50vw] xl:w-[40vw] 2xl:w-[32vw];
+} */
+
+/* .hr_liness{
+    @apply  w-[150px]  my-10;
+    border-top: 3px solid #AAAAAA;  
+} */
+/* .creat_text p{
+@apply text-white text-center text-lg w-[80vw] lg:w-[60vw] xl:w-[50vw] 2xl:w-[36vw];
+
+} */
+
+.carousel-inner {
+    position: relative;
+    
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+
+}
+
+.bgrd_img{
+    @apply absolute top-[20%] left-[10%] lg:left-[25%] xl:left-[30%] 2xl:left-[35%] text-white;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    height: 90vh;
+    width: 100%;
+    filter: brightness(70%);
+    
+    
+}
+.sustain{
+    @apply text-5xl text-white text-center  md:w-[70vw] lg:w-[50vw] xl:w-[40vw] 2xl:w-[32vw];
+} 
+.hr_liness{
+    @apply  w-[150px]  my-10 mx-auto;
+    border-top: 3px solid #AAAAAA;  
+}
+.creat_text p{
+    @apply text-white text-center text-lg w-[80vw] lg:w-[60vw] xl:w-[50vw] 2xl:w-[36vw];
+    
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2{
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet{
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+
+
+
+
+/* fostering section */
+.lgblock{
+    @apply hidden lg:block  lg:flex  xl:hidden;
+    background-color: #effdff ;
+}
+.automation{
+    @apply p-12;
+}
+.lgimg{
+    @apply px-12 py-0 lg:my-auto;
+}
+.text_auto{
+    @apply text-base;
+}
+.head_age{
+    @apply  text-8xl font-bold mx-0  mt-2.5 mb-5 ;
+}
+.divbut{
+    @apply text-base mb-4 mx-0 mt-0;
+}
+.btn_parent{
+    @apply pt-4;
+}
+.btn{
+    @apply px-11 py-4 text-white rounded-full;
+    background-color: #32ab52;
+}
+
+.container{
+    @apply  pt-8 pr-6 pb-0 pl-4 mb-12 lg:mt-10 lg:mb-20 lg:py-0 lg:px-7; 
+}
+
+.lgdiv{
+    @apply lg:flex lg:gap-x-6;
+}
+.div_what{
+    @apply  my-auto lg:pr-14;
+}
+.text{
+    @apply  text-base text-gray-600;
+}
+
+.text_for{
+    @apply text-3xl font-semibold leading-10 text-gray-600 mb-4 mt-1.5 mx-0;
+}
+
+.para_tog{
+@apply mb-4 mt-0 mx-0 ;
+}
+.para{
+    @apply text-base my-4;
+}
+
+.mainparent{
+ @apply flex flex-col gap-y-6  md:flex md:flex-row md:gap-x-5 lg:gap-x-10;
+}
+
+.modernize{
+    @apply bg-gray-50 rounded-lg;
+}
+.modernize:hover{
+    background-color: #e2f3e6;
+}
+.img_para{
+    @apply px-5 py-8  text-center;
+    
+}
+.image{
+    @apply w-16 mx-auto;
+}
+.text_mod{
+    @apply text-green-500 font-bold text-2xl mx-0 mt-1.5 mb-4;
+}
+
+.para_dev{
+    @apply text-base;
+}
+
+
+/* services section */
+#red{
+    @apply mx-9 mt-0 mb-14;
+}
+.services{
+    @apply text-center mb-10;
+}
+.text_do{
+    @apply text-lg font-normal mt-1 mb-6 mx-0;
+}
+.head_ser{
+    @apply text-4xl mx-0 mt-1.5 mb-4 px-4 font-semibold;
+}
+.box{
+    @apply flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 lg:gap-x-10;
+}
+
+.ser_img{
+    @apply text-center;
+}
+.ser_apli img{
+    @apply mx-auto mb-4;
+}
+.hoverimg:hover {
+    @apply opacity-40;
+}
+.apl_ser_text{
+    @apply text-green-500 text-2xl font-semibold mb-4; 
+} 
+
+
+
+/* autologicalsection */
+
+.autlgc_cont{
+    @apply px-9 py-0 mb-10 md:mb-44 lg:mt-24 lg:mb-16 2xl:mb-24;
+}
+
+.lg_flex{
+    @apply lg:grid lg:grid-cols-2 lg:gap-x-16 2xl:gap-1;
+}
+.box_why_futr{
+    @apply order-1;
+}
+.why_tex{
+    @apply text-2xl  md:text-4xl font-bold mt-4 mb-5;
+}
+.div_futur .futu_text{
+    @apply  font-bold mb-9;
+}
+.mar_btm{
+    @apply mb-5;
+}
+
+.keyfrm{
+    @apply py-3 px-4 flex gap-x-2 items-center;
+}
+.fas{
+    @apply text-green-500 font-extrabold ;
+}
+.anchor{
+    @apply font-bold text-base;
+}
+.clickimg{
+    @apply md:mt-40 w-full lg:mt-24 2xl:w-[92%];
+}
+
+
+/* section mission */
+#mission{
+    @apply bg-green-500 py-12 px-8;   
+}
+.lg_box{
+    @apply lg:grid lg:grid-cols-2 lg:gap-x-7;
+}
+.mis_box{
+    @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 lg:gap-x-9;
+}
+.miss_container{
+    @apply pb-4;
+}
+.mis_text{
+    @apply  mx-0 mt-1 mb-2 text-base text-gray-800 font-semibold;
+}
+.miss_para{
+    @apply  text-sm lg:text-base text-white font-semibold;
+}
+.future_text{
+    @apply text-3xl lg:text-5xl mx-0 mt-1.5 mb-4 text-white font-semibold;
+}
+
+
+
+/* footer section*/
+.div_custom{
+    @apply text-2xl  p-8 text-center font-bold; 
+}
+.text_custom{
+    @apply mx-0  mt-2 mb-5 md:text-4xl md:mb-20 lg:mb-5;
+}
+.img_kelly{
+    @apply flex justify-center mb-7 md:flex md:justify-start md:pb-16 lg:flex lg:justify-center;
+}
+.cont_auto{
+    @apply pt-0 px-9 pb-16;
+    background-color: #f2fff4;
+}
+.mdflex{
+    @apply pt-8 lg:flex lg:mb-7;
+}
+
+.box_auto{
+    @apply flex flex-col gap-y-3 2xl:ml-14;
+}
+.box_auto img{
+    @apply w-[90%] md:w-[50%];
+}
+.quik_text{
+    @apply text-xl font-semibold mt-3 lg:m-0;
+}
+.auto_add{
+    @apply text-base;
+}
+
+.md_grid{
+    @apply md:grid md:grid-cols-3 md:mt-16 lg:m-0  lg:grid lg:grid-cols-2;
+}
+
+.privancy{
+    @apply flex gap-x-6 md:flex md:flex-col md:justify-center md:items-center lg:flex lg:flex-row lg:gap-x-3 xl:ml-28 2xl:ml-56;
+}
+.privancy p{
+    @apply  my-2 md:my-0;
+}
+.corporate_parent p{
+    @apply text-base py-2;
+}
+.face{
+    @apply p-3 float-right;
+}
+.fab{
+    @apply bg-green-500 text-white px-2 py-2 rounded-lg;
+    
+}
+@tailwind utilities;
